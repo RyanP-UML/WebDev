@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,300;0,400;1,300;1,400&display=swap');
+
+body {
+    font-family:  'Roboto', sans-serif;
+    font-weight: 300 !important;
+    margin: 0px;
+    background: #EFEFEF;
+    text-shadow: none;
+    }
+
+
+header {
+    border-bottom: 1px solid black;
+    background: #233C4D;
+    color: #fff;
+
+}
+
+header > h1, h3 {
+    margin-left: 20px;
+    display: inline-block;
+}
+
+#site-title {
+    display: inline-block;
+    border-right: 2px solid #fff;
+    width: 200px;
+}
+
+.profile-menu {
+    list-style: none;
+    float: right;
+    margin-top: 30px;
+    margin-right: 20px;
+}
+
+.profile-menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+#context {
+    display: inline-block;
+    position: absolute;
+    background: #fff;
+    box-shadow: 2px 2px 15px rgb(0, 0, 0, .5);
+    display: none;
+}
+
+.context-menu {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.context-menu a {
+    display: block;
+    width: 200px;
+    padding: 10px;
+    color: #333;
+    font-weight: 500;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+.context-menu a:hover {
+    background: #eee;
+}
+
+[data-trigger="dropdown"] {
+    padding-bottom: 35px;
+    padding-left: 150px;
+}
+
+.profile-submenu{
+    list-style: none;
+    padding: 0px;
+    border: 1px solid #aaa;
+    background: #fff;
+    margin-top: 32px;
+    box-shadow: 2px 3px 6px #aaa;
+    width: 250px;
+    position: absolute;
+    right: 10px;
+    display:none;
+}
+
+.profile-submenu a {
+    text-decoration: none;
+    padding: 10px 10px;
+    display: block;
+    color: #333;
+    text-shadow: none;
+    font-weight: 500;
+}
+
+.profile-submenu a:hover {
+    background: #eee;
+}
+
+.introduction {
+    margin: 30px;
+    color: #303030;
+    border-bottom: 2px solid #000;
+}
+
+#main {
+    margin: 30px;
+}
+
+#main a {
+    text-decoration: none;
+}
+
+.text {
+    width: 400px;
+}
+
+.context-menu a.hidden.shown {
+    display: block;
+}
+
+.context-menu a.hidden{
+    display: none;
+}
+

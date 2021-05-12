@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Ryan's Pizza</title>
+    </head>
+    <body>
+
+        <header>
+            <h1>Ryan's Pizza</h1>
+            <h4>Where pizza gets Ryan'd</h4>
+        </header>
+        <br>
+
+        <section id="contact-form">
+            <h2>Place Order</h2>
+
+            <form action="place-order.php" method="GET">
+
+                <h4>Delivery Method</h4>
+                <input type="radio" name="deliveryMethod" value="delivery"> Delivery <br>
+                <input type="radio" name="deliveryMethod" value="pickup"> Pickup <br>
+                <input type="radio" name="deliveryMethod" value="curbside"> Curbside <br>
+
+                <h4>Address</h4>
+                <input name="adress1" placeholder="Adress Line 1" class="lg-input"><br>
+                <input name="adress2" placeholder="Adress Line 2" class="lg-input"><br>
+                <input name="city" placeholder="City" class="sm-input">
+                <input name="state" placeholder="State" class="sm-input"><br>
+                <input name="zip" placeholder="Zip Code" class="sm-input">
+
+                <h4>Size</h4>
+                <select name="size">
+                    <option value="12">12" - $13.99</option>
+                    <option value="14">14" - $15.99</option>
+                    <option value="16">16" - $17.99</option>
+                    <option value="18">18" - $19.99</option>
+                </select>
+
+                <h4>Toppings</h4>
+                <input type="checkbox" name="topping" value="pepperoni"> Pepperoni <br>
+                <input type="checkbox" name="topping" value="sausage"> Sausage <br>
+                <input type="checkbox" name="topping" value="bacon"> Bacon <br>
+                <input type="checkbox" name="topping" value="olives"> Olives <br>
+                <input type="checkbox" name="topping" value="onion"> Onions <br>
+                <br><br>
+
+                <button type="submit">Place Order</button>
+            </form>
+        </section>
+
+        <footer>
+            <center>
+                <div>
+                    &copy; Copyright 2021
+                </div>
+                <a href="#">Contact Us</a>
+            </center>
+        </footer>
+
+    </body>
+</html>
