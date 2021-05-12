@@ -1,4 +1,8 @@
 $(document).ready(function(){
+    let el = document.getElementById('text');
+
+    console.log($('.profile-submenu a').first().text());
+    console.log($('.profile-submenu a').last().text());
 
     $(document).on('contextmenu', function(){
         return false;
@@ -62,6 +66,46 @@ $(document).ready(function(){
 
         $('.text').val('');
     });
+
+    $('p:contains("dread")').html("This had dread in it, it still does.");
+
+    $('p').each(function(){
+        console.log($(this).text());
+    });
+
+    if($(':contains("dread")').is("p")){
+        console.log("dread is in a paragraph");
+    }
+
+    $('textarea').focusin(function(){
+        console.log("Focused in on text area");
+    });
+
+    $('textarea').focusout(function(){
+        console.log("Focused out of text area");
+    });
+
+    $('input[name=email]').focusout(function(){
+        if($(this).val().indexOf('@') > -1 && $(this).val().indexOf('.') > -1){
+            $('.status').html("Valid Email");
+            $(this).css({
+                background: 'green'
+            });
+        } else{
+            $('.status').html("Invalid Email");
+            $(this).css({
+                background: 'red'
+            });
+        }
+    });
+
+    $('input').css({
+        background: '#f00',
+        padding: '10px',
+        borderColor: '#000'
+    });
+
+
 
 });
 
